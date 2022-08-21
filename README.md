@@ -30,4 +30,7 @@ Finished dev [unoptimized + debuginfo] target(s) in 35.06s
 Running `target/debug/crowdfunding-meta build --target=wasm32-unknown-unknown --release --out-dir /home/IamDeveloper/SwDevel/blockchain/rust/rust-elrond-blockchain-projects/my-first-elrond-project/my-smart-contracts/crowdfunding/output --target-dir /home/IamDeveloper/elrondsdk/default_cargo_target --no-wasm-opt`
 CRITICAL:cli:No file matches pattern [*.wasm].
 ```
-
+```
+find . -name "*.wasm"
+./output/crowdfunding.wasm
+```
