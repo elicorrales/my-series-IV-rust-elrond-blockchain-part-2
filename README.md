@@ -5,8 +5,17 @@
 See [Here](https://github.com/elicorrales/blockchain-tutorials/blob/main/README.md) for the overall document that
 refers to all the series.  
   
+> The wasm-opt program is a tool in the binaryen toolkit which is a wasm-to-wasm transformation that optimizes the input wasm module. Often wasm-opt can get 10-20% size reductions over LLVM's raw output.  
+  
 ```
-rm -rf $(find . -name Cargo.lock; find . -name target);
+npm install -g wasm-opt
+```
+  
+```
+rm -rf $(find . -name Cargo.lock;
+         find . -type d -name target;
+         find . -type d -name output;
+         find . -type d -name wasm);
 ```
 ```
 tree
